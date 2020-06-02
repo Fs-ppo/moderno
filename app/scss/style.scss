@@ -61,6 +61,15 @@
     background-size: cover;
     background-position: center;
     min-height: 533px;
+    &.page-search{
+        min-height: 230px;
+        .search__inner{
+            padding: 60px 0px 70px;
+        }
+        .search__inner-text{
+            margin-bottom: 25px;
+        }
+    }
 }
 .search__inner {
     padding: 135px 0 100px;
@@ -492,7 +501,7 @@
     }
 }
 .link-facebook{
-
+    background-position: 0 0;
 }
 .link-twitter{
     background-position: -28px -0;

@@ -18,6 +18,9 @@ body{
 .content{
 	flex: 1 0 auto;
 }
+.page-content{
+    background-color: $gray;
+}
 .footer{
 	flex: 0 0 auto;
 }
@@ -67,4 +70,33 @@ body{
 .rate_star{
     display: inline-block;
     margin-right: 7px;
+}
+.breadcrumbs{
+    &__inner{
+        padding: 45px 0px 40px;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            &:last-child{
+                a,
+                span{
+                    color: $bg; 
+                }
+            }
+            & + li{
+                padding-left: 24px;
+                &::before{
+                    content: '-';
+                    color: $green;
+                    position: absolute;
+                    left: 8px;
+                }
+            }
+        }
+        a{
+            color: #b0bec5;
+        }
+    }
 }
