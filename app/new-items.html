@@ -86,28 +86,30 @@
             </div>
             <section class="product-page">
                 <div class="container">
-                    <aside class="product-page__aside">
-                        <div class="product-page__item">
-                            <div class="aside__title">
-                                Categories
+                    <div class="product-page__inner">
+                        <aside class="product-page__aside">
+                            <div class="category aside__item">
+                                <div class="aside__title">
+                                    Categories
+                                </div>
+                                <ul class="category__list">
+                                    <li><a href="#">WordPress</a><span>(150)</span></li>
+                                    <li><a href="#">Joomla</a><span>(100)</span></li>
+                                    <li><a href="#">PSD</a><span>(50)</span></li>
+                                    <li><a href="#">Plugins</a><span>(60)</span></li>
+                                    <li><a href="#">Components</a><span>(40)</span></li>
+                                </ul>
                             </div>
-                            <ul class="category__list">
-                                <li><a href="#">WordPress</a><span>(150)</span></li>
-                                <li><a href="#">Joomla</a><span>(100)</span></li>
-                                <li><a href="#">PSD</a><span>(50)</span></li>
-                                <li><a href="#">Plugins</a><span>(60)</span></li>
-                                <li><a href="#"></a>Components<span>(40)</span></li>
-                            </ul>
-                        </div>
-                        <div class="product-page__item">
-                            <div class="price-range">
+                            <div class="price-range aside__item">
                                 <div class="aside__title">
                                     Price Range
                                 </div>
+                                <form>
+                                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                                    <button type="submit">Search</button>
+                                </form>
                             </div>
-                        </div>
-                        <div class="product-page__item">
-                            <div class="top-sellers">
+                            <div class="top-sellers aside__item">
                                 <div class="aside__title">
                                     Top 10 Sellers
                                 </div>
@@ -140,17 +142,22 @@
                                 </div>
                                 <a href="#" class="top-sellers__link"></a>
                             </div>
-                        </div>
-                    </aside>
-                    <div class="product-page__content">
-                        <div class="product-page__filter">
+                        </aside>
+                        <div class="product-page__content">
+                            <div class="product-page__filter">
 
-                        </div>
-                        <div class="product-page__items">
+                            </div>
+                            <div class="product-page__items">
 
-                        </div>
-                        <div class="pagination">
-                            
+                            </div>
+                            <div class="pagination">
+                                <ul class="pagination__list">
+                                    <li><a class="active" href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
