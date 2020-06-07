@@ -1,9 +1,5 @@
 $(function(){
 
-
-
-    var mixer = mixitup(".products__inner-wrapper");
-
     $(".products-slider__inner").slick({
         dots: true,
         infinite: true,
@@ -22,12 +18,10 @@ $(function(){
         type: "double",
         min: 0,
         max: 1000,
-        from: 200,
-        to: 500,
-        grid: true,
+        from: 0,
+        to: 600,
     });
 
-
-
+    var mixer = mixitup(".products__inner-wrapper");
     
 });

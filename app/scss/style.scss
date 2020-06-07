@@ -172,7 +172,8 @@
         border-bottom: 1px solid #e7ecf2;
     }
     &-name{
-        min-width: 310px;
+        max-width: 310px;
+        width: 100%;
     }
     &-title{
         color: $bg;
@@ -573,6 +574,9 @@
     padding: 0px 32px 32px;
     margin-bottom: 30px;
     width: 270px;
+    &.top-sellers{
+        padding-bottom: 0px;
+    }
 }
 .aside__title{
     border-bottom: 1px solid #dde3e8;
@@ -604,7 +608,105 @@
         color: #90a4ae;
     }
 }
-
+.price-range{
+    & .aside__title{
+        margin-bottom: 10px;
+    }
+    form{
+        button{
+            margin-top: 45px;
+            border: none;
+            background-color: $green;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            padding: 15px 0;
+            line-height: 15px;
+            width: 100%;
+            &::before{
+                font-family: 'icomoon'
+            }
+        }
+    }   
+}
+.irs--flat .irs-line{
+    height: 6px;
+    background-color: #f2f5f8; 
+}
+.irs--flat .irs-bar{
+    height: 6px;
+    background-color: #37474f;
+}
+.irs--flat .irs-handle{
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 3px solid $green;
+    border-radius: 50%;
+}
+.irs--flat .irs-handle>i:first-child{
+    display: none;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-single:before, .irs--flat .irs-to:before{
+    display: none;
+}
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to{
+    background-color: transparent;
+    color: #78909c;
+    font-size: 15px;
+}
+.irs--flat .irs-max, .irs--flat .irs-min{
+    display: none;
+}
+.irs--flat .irs-handle{
+    top: 20px;
+}
+.irs-from, .irs-single, .irs-to{
+    top: 45px;
+}
+.top-sellers{
+    &__link{
+        background-color: $green;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 40px;
+    }
+    & .product_item{
+        box-shadow: none;
+        margin-bottom: 25px;
+        .rate_star{
+            margin: 0;
+        }
+        &-author{
+            span{
+                font-weight: 400;
+            }
+        }
+        &-title{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &-img{
+            min-height: 120px;
+        }
+        &-content{
+            padding: 0;
+            min-height: 65px;
+            border: none;
+        }
+        &-info{
+            padding: 0;
+            padding-bottom: 15px;
+            min-height: 50px;
+            border-bottom: 1px solid #e7ecf2;
+        }
+        &-price{
+            font-size: 16px;
+        }
+    }
+}
 // end product-page
   
   
