@@ -100,3 +100,16 @@ body{
         }
     }
 }
+.angle__right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        content: "\f105";
+        position: absolute;
+        font-family: 'icomoon';
+        left: 0;
+        top: 0;
+        color: $green;
+        font-size: 14px;
+    }
+}
