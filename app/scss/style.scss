@@ -315,6 +315,113 @@
 }
 
 // end header
+
+
+// start modal
+#modal{
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.login__title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.login__wrapper{
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label{
+        position: relative;
+        display: block;
+        width: 100%;
+        &::before{
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    .login__label-name::before{
+        content: "\f007";
+        top: 9px;
+        left: 18px;
+    }
+    .login__label-pass::before{
+        content: "\f023"; 
+        top: 9px;
+        left: 18px;
+    }
+    input{
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        padding-left: 40px;
+        padding-right: 15px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        &::placeholder{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    button{
+        margin-top: 19px;
+        background-color: #fff;
+        padding: 18px 0 16px;
+        margin-right: 10px;
+        border: none;
+        text-transform: uppercase;
+        width: 140px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+    }
+}
+.lost-pass{
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+.create-acc{
+    margin-top: 19px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #76ae36;
+    width: 246px;
+    text-align: center;
+    padding: 14px 0 15px 28px;
+    position: relative;
+    &::before{
+        content: '\f044';
+        position: absolute;
+        top: 15px;
+        left: 35px;
+        font-family: 'icomoon';
+    }
+}
+.fancybox-button svg path{
+    fill: #fff;
+}
+
+
+// end modal
+
+
 // start search
 
 .search{
@@ -1383,9 +1490,7 @@
 .aside__information-line{
     font-size: 14px;
     color: #70838d;
-    & + .aside__information-line{
-        margin-top: 15px;
-    }
+    margin-top: 15px;
     &:first-child{
         margin-top: 20px;
     }
@@ -1471,6 +1576,75 @@
 }
 
 // end product-one
+
+
+// start 404 page
+.page-404{
+    margin-bottom: 150px;
+}
+.page-404__wrapper{
+    border: 1px solid #dcdcdc;
+    width: 100%;
+}
+.page-404__head{
+    background-color: #fff;
+    color: #444;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 24px 27px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.page-404__box{
+    background-color: $green;
+    text-align: center;
+    color: #fff;
+}
+.page-404__404{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 300px;
+    font-weight: 800;
+    line-height: 300px;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../images/404.png);
+        width: 157px;
+        height: 301px;
+        margin-left: 20px;
+    }
+}
+.page-404__title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+.page-404__text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 550px;
+}
+.page-404__link{
+    padding: 20px 30px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 100px;
+}
+
+// end 404 page
   
   
 @import 'media';
