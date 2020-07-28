@@ -1578,15 +1578,17 @@
 // end product-one
 
 
-// start 404 page
+// start 404 page and about us page
 .page-404{
     margin-bottom: 150px;
 }
-.page-404__wrapper{
+.page-404__wrapper,
+.about-us__wrapper{
     border: 1px solid #dcdcdc;
     width: 100%;
 }
-.page-404__head{
+.page-404__head,
+.about-us__head{
     background-color: #fff;
     color: #444;
     font-size: 24px;
@@ -1643,8 +1645,25 @@
     line-height: 14px;
     margin-bottom: 100px;
 }
-
-// end 404 page
+.about-us{
+    margin-bottom: 145px;
+}
+.about-us__box{
+    background-color: #fff;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+.about-us__title{
+    font-size: 20px;
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about-us__text{
+    color: #707070;
+    padding-bottom: 50px;
+}
+// end 404 page and about us page
   
   
 @import 'media';
