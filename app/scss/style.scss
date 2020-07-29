@@ -1583,17 +1583,19 @@
     margin-bottom: 150px;
 }
 .page-404__wrapper,
+.contact-us__wrapper,
 .about-us__wrapper{
     border: 1px solid #dcdcdc;
     width: 100%;
 }
 .page-404__head,
+.contact-us__head,
 .about-us__head{
     background-color: #fff;
     color: #444;
     font-size: 24px;
     font-weight: 500;
-    padding: 24px 27px;
+    padding: 24px 40px;
     border-bottom: 1px solid #dcdcdc;
 }
 .page-404__box{
@@ -1650,20 +1652,134 @@
 }
 .about-us__box{
     background-color: #fff;
-    padding: 50px;
-    padding-bottom: 0px;
+    padding: 30px 70px 40px 50px;
 }
-.about-us__title{
-    font-size: 20px;
-    color: #444;
-    font-weight: 700;
-    margin-bottom: 20px;
+.about-us__item{
+    padding-bottom: 10px;
+    h3{
+        font-size: 20px;
+        color: #444;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    p{
+        color: #707070;
+    }
 }
-.about-us__text{
-    color: #707070;
-    padding-bottom: 50px;
-}
+
 // end 404 page and about us page
+
+// start contact page
+.contact-us{
+    margin-bottom: 135px;
+}
+.contact-us__box{
+    background-color: #fff;
+    padding: 35px 40px 15px;
+}
+.contact-us__map{
+    margin-bottom: 50px;
+    iframe{
+        width: 100%; 
+        height: 415px;
+    }
+}
+.contact-us__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us__info{
+    max-width: 330px;
+    margin-right: 30px;
+    width: 100%;
+}
+.contact-us__item{
+    padding-left: 40px;
+    margin-bottom: 35px;
+    position: relative;
+    a{
+        margin-top: 25px;
+        color: #707070;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        color: #707070;
+        font-family: 'Roboto', sans-serif;
+        max-width: 250px;
+    }
+    &::before{
+        position: absolute;
+        color: $green;
+        font-size: 24px;
+        left: 0;
+    }
+}
+.contact-us__item-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: $bg;
+    font-family: 'Roboto', sans-serif;
+}
+.contact-us__item-line{
+    width: 44px;
+    height: 4px;
+    background-color: $green;
+}
+.contact-us__form{
+    max-width: 725px;
+    width: 100%;
+    textarea{
+        width: 100%;
+        height: 190px;
+        border: none;
+        background-color: #f1f4f5;
+        padding: 15px 16px;
+        margin-bottom: 22px;
+        resize: none;
+        &::placeholder{
+            color: #7a7a7a;
+        }
+    }
+    button{
+        width: 190px;
+        background-color: $green;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 15px 10px;
+        text-transform: uppercase;
+        border: none;
+    }
+}
+.contact-us__form-title{
+    font-size: 24px;
+    color: $bg;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.contact-us__form-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    input{
+        border: none;
+        background-color: #f1f4f5;
+        height: 42px;
+        max-width: 350px;
+        width: 100%;
+        padding: 0 16px;
+        &::placeholder{
+            color: #7a7a7a;
+        }
+        & + input{
+            margin-left: 20px;
+        }
+    }
+}
+
+// end contact page
   
   
 @import 'media';
