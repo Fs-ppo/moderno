@@ -324,6 +324,7 @@
     width: 100%;
     padding-top: 90px;
     padding-bottom: 100px;
+    display: none;
 }
 .login__title{
     text-align: center;
@@ -1873,6 +1874,183 @@
     }
 }
 // end settings
+
+//start profile
+.profile__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.profile__content{
+    margin-left: 31px;
+    max-width: 870px;
+    width: 100%;
+}
+.profile-status{
+    font-size: 13px;
+    color: #70838d;
+    border: 1px solid #d5d5d5;
+    padding: 3px 13px 3px 25px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-radius: 50%;
+
+        width: 9px;
+        height: 9px;
+    }
+}
+.profile-on{
+    &::before{
+        background-color: $green;
+    }
+}
+.profile-off{
+    &::before{
+        background-color: $red;
+    }
+}
+.profile__aside-btn{
+    text-align: center;
+    max-width: 270px;
+    width: 100%;
+
+}
+.profile__aside-message{
+    display: block;
+    height: 55px;
+    background-color: $text;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 13px;
+    font-weight: 500;
+    padding: 17px 10px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    font-family: 'Roboto', sans-serif !important;
+    &::before{
+        font-family: 'icomoon';
+        margin-right: 13px;
+        font-size: 16px;
+    }
+}
+.profile__aside-following{
+    display: block;
+    height: 55px;
+    background-color: $green;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    padding: 17px 10px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+}
+.profile__banner{
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.profile__banner-images{
+    background-image: url(../images/content/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 332px;
+}
+.profile__items{
+    display: flex;
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+.profile__item{
+    text-align: center;
+    width: 25%;
+    padding: 14px 5px;
+    &+.profile__item{
+        border-left: 1px solid #dedede;
+    }
+}
+.profile__item-title{
+    font-style: 14px;
+    color:$bg;
+    font-weight: 500;
+}
+.profile__item-content{
+    font-style: 14px;
+    color: #707070;
+    &.profile__item-price{
+        color: #000;
+    }
+}
+.profile-settings{
+    .product-one__tabs.settings__tabs{
+        .tabs span{
+            font-family: 'Roboto', sans-serif !important;
+            color: #707070;
+            font-weight: 500;
+            position: relative;
+            &.active::before{
+                color: $green;
+            }
+            &::before{
+                position: absolute;
+                font-family: 'icomoon';
+                left: 22px;
+                top: 10px;
+                color: #d0d0d0;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.profile-box{
+    padding: 35px 40px 25px;
+}
+.profile-box__title{
+    font-size: 20px;
+    color: $bg;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.profile-box__text{
+    color: #707070;
+    margin-bottom: 35px;
+}
+.profile-box__item-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.profile-box__item-name{
+    font-size: 16px;
+    color: $bg;
+    font-weight: 500;
+    font-style: italic;
+}
+.profile-box__item-score{
+    font-size: 16px;
+    color: $bg;
+    font-weight: 700;
+}
+.profile-box__item-line{
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 23px;
+    span{
+        display: block;
+        border-radius: 5px;
+        height: 15px;
+        background-image: url(../images/pro-bar.jpg);
+        
+    }
+}
+//end profile
+
+  
 
   
 @import 'media';
