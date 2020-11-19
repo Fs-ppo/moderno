@@ -1503,7 +1503,45 @@
 .price__box{
     display: flex;
     justify-content: space-between;
-        padding: 30px 0;
+    padding: 30px 0;
+    .jq-selectbox{
+        max-width: 82px;
+        width: 100%;
+    }
+    .jq-selectbox__select {
+        height: 30px;
+        padding: 0px 20px 0 10px;
+        border: 1px solid #d5d5d5;
+        border-bottom-color: #dedede;
+        border-radius: 0px;
+        background: #fff;
+        box-shadow: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        color: #707070;
+        text-shadow: none;
+        line-height: 30px;
+    }
+    .jq-selectbox__trigger-arrow{
+        border: none;
+        line-height: 30px;
+        top: 0;
+        right: 15px;
+        &::before{
+            font-family: 'icomoon';
+            content: "\f0d7";
+            color: $green;
+        }
+    }
+    .jq-selectbox__trigger{
+        border-left: none;
+    }
+    .jq-selectbox__dropdown{
+        top: 30px !important;
+        margin: 0;
+        background-color: #f9f9f9;
+        border: 1px solid #dedede;
+    }
 }
 .price__product{
     font-weight: 500;
@@ -1763,7 +1801,6 @@
 .contact-us__form-row{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 28px;
     input{
         border: none;
         background-color: #f1f4f5;
@@ -1771,11 +1808,9 @@
         max-width: 350px;
         width: 100%;
         padding: 0 16px;
+        margin-bottom: 28px;
         &::placeholder{
             color: #7a7a7a;
-        }
-        & + input{
-            margin-left: 20px;
         }
     }
 }
@@ -1864,13 +1899,41 @@
         height: 40px;
         padding: 0px 15px;
     }
-    select{
+    .jq-selectbox{
         width: 100%;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
+    }
+    .jq-selectbox__select {
         height: 40px;
         padding: 0px 15px;
+        border: 1px solid #dedede;
+        border-bottom-color: #dedede;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
         color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+    .jq-selectbox__trigger-arrow{
+        border: none;
+        line-height: 40px;
+        top: 0;
+        right: 20px;
+        &::before{
+            font-family: 'icomoon';
+            content: "\f0d7";
+        }
+    }
+    .jq-selectbox__trigger{
+        border-left: none;
+    }
+    .jq-selectbox__dropdown{
+        top: 40px !important;
+        margin: 0;
+        background-color: #f9f9f9;
+        border: 1px solid #dedede;
     }
 }
 // end settings
@@ -2196,13 +2259,10 @@
     justify-content: space-between;
 }
 .withdrawals__box{
-    min-width: 570px;
+    max-width: 570px;
     width: 100%;
     background-color: #fff;
     border: 1px solid #dedede;
-    & + .withdrawals__box{
-        margin-left: 30px;
-    }
     height: 100%;
 }
 .withdrawals__title{
@@ -2223,6 +2283,7 @@
         padding: 16px 30px;
         margin-top: 40px;
         margin-bottom: 50px;
+        cursor: pointer;
     }
 }
 .withdrawals__form-line{
