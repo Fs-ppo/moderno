@@ -6,6 +6,29 @@ $(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
+        responsive:[
+            {
+                breakpoint: 1850,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 1450,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ] 
     });
 
     $(".rate_star").rateYo({

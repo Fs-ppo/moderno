@@ -516,8 +516,14 @@
 }
 .products__inner-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: -30px;
+}
+
+.products .product_item{
+    flex-basis: calc(25% - 30px);
+    margin-left: 30px;
 }
 .product_item{
     max-width: 442px;
@@ -525,7 +531,6 @@
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
     background-color: #fff;
-    transition: all .3s;
     &-img{
         min-height: 250px;
         background-repeat: no-repeat;
@@ -618,6 +623,13 @@
 
 .products-slider{
     padding: 110px 0px 120px;
+    .products-slider__inner{
+        text-align: center;
+    }
+    .product_item{
+        max-width: 442px;
+        text-align: left;
+    }
     .slick-dots{
         text-align: center;
         margin-top: 30px;
@@ -642,6 +654,9 @@
         }
     }
 }
+.slick-track{
+    left: 2px;
+}
 
 // end products-slider
 // start advantages
@@ -656,6 +671,7 @@
     .advantages__inner{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     .advantages__item{
         text-align: center;
@@ -1140,14 +1156,16 @@
     width: 100%;
     .product-page__items{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        margin-left: -30px;
     }
     .jq-ry-container{
         padding: 0;
     }
     .product_item{
-        max-width: 270px;
+        flex-basis: calc(33.333% - 30px);
+        margin-left: 30px;
     }
     .product_item-img{
         min-height: 180px;
@@ -1230,6 +1248,8 @@
             box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
         }
         &.list{
+            max-width: 100%;
+            flex-basis: 100%;
             .product_item-star{
                 margin-left: auto;
                 margin-right: 30px;
@@ -1244,7 +1264,6 @@
             .product_item-name{
                 max-width: 480px;
             }
-            max-width: 100%;
             .product_item-img{
                 float: left;
                 width: 240px;
@@ -1389,7 +1408,6 @@
 .product-one__icon{
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
     border: 1px solid #dcdcdc;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     max-width: 270px;
